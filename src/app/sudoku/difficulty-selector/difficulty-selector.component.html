@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="close" mat-dialog-close>
+    <img src="./assets/images/close.png" alt="close" />
+  </div>
+  <div class="content">
+    <h1 mat-dialog-title>Choose difficulty</h1>
+    <div mat-dialog-content>
+      <div class="form">
+        <mat-radio-group class="radio-group" [(ngModel)]="selectedDifficulty">
+          <mat-radio-button
+            class="radio-button"
+            *ngFor="let Difficulty of difficulties"
+            [value]="Difficulty.value"
+          >
+            {{ Difficulty.text }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+
+    <div mat-dialog-actions>
+      <button
+        [mat-dialog-close]="selectedDifficulty"
+        mat-flat-button
+        color="primary"
+      >
+        Create
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<section class="container">
+  <app-grid *ngIf="sudoku" [sudoku]="sudoku"></app-grid>
+  <button mat-flat-button color="primary" (click)="newSudoku()">
+    Create New Puzzle
+  </button>
+</section>

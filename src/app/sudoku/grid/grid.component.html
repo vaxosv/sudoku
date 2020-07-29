@@ -1,0 +1,6 @@
+<app-aside></app-aside>
+<div class="grid-container">
+  <section *ngFor="let section of sudoku">
+    <app-grid-section [sudokuSection]="section"></app-grid-section>
+  </section>
+</div>

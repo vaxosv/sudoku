@@ -1,0 +1,13 @@
+<div class="container">
+  <label>
+    <input
+      type="text"
+      [disabled]="digit.show"
+      [value]="sudokuService.showValue(digit.show, digit.number)"
+      [class.invalid]="showError"
+      (keydown)="validateNumber($event)"
+      minlength="1"
+      [maxLength]="1"
+    />
+  </label>
+</div>

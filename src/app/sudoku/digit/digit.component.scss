@@ -1,0 +1,32 @@
+.container {
+  padding-bottom: 4px;
+
+  label {
+    input {
+      background-image: none;
+      background-color: transparent;
+      box-shadow: none;
+      -webkit-appearance: none;
+      margin: 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border: 1px solid #313131;
+      border-radius: 8px;
+
+      font-size: 40px;
+      line-height: 60px;
+    }
+
+    .invalid {
+      border: 1px solid #ff3838;
+      background: rgba(255, 56, 56, 0.05);
+      color: #ff3838;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+::ng-deep .mat-dialog-container {
+  background: white;
+  padding: 0;
+}
+
+.container {
+  margin-top: 59px;
+  position: relative;
+  color: black;
+
+  .close {
+    position: absolute;
+    top: 27px;
+    right: 73px;
+    cursor: pointer;
+
+    img {
+    }
+  }
+
+  .mat-dialog-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .content {
+    align-items: center;
+
+    .mat-dialog-content {
+      margin: 0;
+    }
+
+    .form {
+      margin-top: 79px;
+
+      ::ng-deep {
+        .mat-radio-label-content {
+          padding-left: 40px;
+        }
+
+        .mat-radio-inner-circle {
+          background-color: #8484d0;
+        }
+
+        .mat-radio-outer-circle {
+          border-color: #8484d0;
+        }
+      }
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 15px 145px;
+
+        .radio-button {
+          font-size: 24px;
+          line-height: 36px;
+
+          &:not(:first-child) {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+
+    .mat-dialog-actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 170px;
+      margin-bottom: 38px;
+
+      button {
+        margin-top: 44px;
+        width: 375px;
+        height: 60px;
+        border-radius: 41px;
+
+        font-size: 24px;
+        line-height: 36px;
+
+        background: #181ead;
+      }
+    }
+  }
+}

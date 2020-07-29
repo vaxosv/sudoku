@@ -1,0 +1,16 @@
+.aside-container {
+  width: 128px;
+
+  .logo {
+    margin-left: 12px;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+
+    .text {
+      margin-top: 50px;
+    }
+  }
+}
