@@ -34,7 +34,7 @@ import { AsideComponent } from './sudoku/aside/aside.component';
     MatButtonModule,
     MatRadioModule
   ],
-  providers: [DifficultySelectorComponent],
+  entryComponents: [DifficultySelectorComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
